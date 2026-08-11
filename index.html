@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NIS2 Zelfscan — Weet waar u staat</title>
+<meta name="description" content="Weet vóór 15 augustus of uw organisatie onder de Cyberbeveiligingswet (NIS2) valt, en hoe volwassen uw beveiliging is op de tien kerndomeinen van de zorgplicht.">
+<meta property="og:title" content="NIS2 Zelfscan — Weet waar u staat">
+<meta property="og:description" content="Doe de gratis check en zelfscan en ontdek of de Cyberbeveiligingswet op uw organisatie van toepassing is.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,8 +17,6 @@
     --navy-900:#0B2440;
     --navy-800:#123354;
     --navy-700:#1C4470;
-    --green-900:#083828;
-    --green-700:#0F4D3B;
     --teal:#2FA37E;
     --teal-light:#5FC29E;
     --blue:#5CA0CE;
@@ -325,6 +327,7 @@
   }
   .trust-inner{
     max-width:600px;
+    margin:0;
   }
   .trust p{
     font-size:16px;
@@ -368,6 +371,12 @@
 </head>
 <body>
 
+<svg style="display:none" aria-hidden="true">
+  <symbol id="chevron-icon" viewBox="0 0 16 16" fill="none">
+    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+</svg>
+
 <div class="constellation" aria-hidden="true">
   <svg viewBox="0 0 640 640">
     <g stroke="#2E6B93" stroke-width="0.7" fill="none" opacity="0.55">
@@ -403,6 +412,7 @@
     </div>
   </header>
 
+  <main>
   <section class="hero">
     <p class="eyebrow">Cyberbeveiligingswet · NIS2</p>
     <h1>Weet <em>vóór 15 augustus</em> of u aan de wet moet voldoen en hoever u al bent.</h1>
@@ -419,7 +429,7 @@
       <p class="path-step">Stap 1 — 2 minuten</p>
       <h2>Val ik onder de wet?</h2>
       <p>Beantwoord een paar korte vragen over uw sector en omvang, en weet direct of de Cyberbeveiligingswet op uw organisatie van toepassing is.</p>
-      <a class="btn btn-primary" href="https://tally.so/r/kdjGZZ">
+      <a class="btn btn-primary" href="https://tally.so/r/kdjGZZ" target="_blank" rel="noopener noreferrer">
         Start de check
         <span class="btn-arrow" aria-hidden="true">→</span>
       </a>
@@ -428,7 +438,7 @@
       <p class="path-step">Stap 2 — 5 minuten</p>
       <h2>Hoe volwassen is mijn beveiliging?</h2>
       <p>Doorloop de volledige zelfscan langs tien kerndomeinen van de zorgplicht en ontvang een score met concrete actiepunten.</p>
-      <a class="btn btn-primary" href="https://tally.so/r/1A04YL">
+      <a class="btn btn-primary" href="https://tally.so/r/1A04YL" target="_blank" rel="noopener noreferrer">
         Start de zelfscan
         <span class="btn-arrow" aria-hidden="true">→</span>
       </a>
@@ -443,14 +453,14 @@
         <summary>
           <span class="domain-num">01</span>
           <span class="domain-name">Governance &amp; bestuursbetrokkenheid</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Een verantwoordelijke voor informatiebeveiliging is aangewezen, ook al is dit een parttime rol.</li>
-            <li>Cybersecurity staat structureel op de agenda van bestuur of directie.</li>
-            <li>Bestuurders zijn aantoonbaar getraind conform de wettelijke trainingsplicht.</li>
+          <ul role="list">
+            <li role="listitem">Een verantwoordelijke voor informatiebeveiliging is aangewezen, ook al is dit een parttime rol.</li>
+            <li role="listitem">Cybersecurity staat structureel op de agenda van bestuur of directie.</li>
+            <li role="listitem">Bestuurders zijn aantoonbaar getraind conform de wettelijke trainingsplicht.</li>
           </ul>
         </div>
       </details>
@@ -458,14 +468,14 @@
         <summary>
           <span class="domain-num">02</span>
           <span class="domain-name">Risicomanagement</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Een actueel risicoregister met duidelijk eigenaarschap per risico.</li>
-            <li>Risico's worden periodiek herbeoordeeld, niet eenmalig vastgelegd.</li>
-            <li>Er is een vastgesteld risicoacceptatieniveau om te kunnen prioriteren.</li>
+          <ul role="list">
+            <li role="listitem">Een actueel risicoregister met duidelijk eigenaarschap per risico.</li>
+            <li role="listitem">Risico's worden periodiek herbeoordeeld, niet eenmalig vastgelegd.</li>
+            <li role="listitem">Er is een vastgesteld risicoacceptatieniveau om te kunnen prioriteren.</li>
           </ul>
         </div>
       </details>
@@ -473,14 +483,14 @@
         <summary>
           <span class="domain-num">03</span>
           <span class="domain-name">Incidentrespons &amp; meldplicht</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Een vastgelegd incident response plan: wie doet wat, wie wordt gebeld.</li>
-            <li>Het team kent de wettelijke meldtermijnen aan het NCSC (24 uur / 72 uur).</li>
-            <li>Er is minimaal jaarlijks geoefend met een realistisch incidentscenario.</li>
+          <ul role="list">
+            <li role="listitem">Een vastgelegd incident response plan: wie doet wat, wie wordt gebeld.</li>
+            <li role="listitem">Het team kent de wettelijke meldtermijnen aan het NCSC (24 uur / 72 uur).</li>
+            <li role="listitem">Er is minimaal jaarlijks geoefend met een realistisch incidentscenario.</li>
           </ul>
         </div>
       </details>
@@ -488,14 +498,14 @@
         <summary>
           <span class="domain-num">04</span>
           <span class="domain-name">Bedrijfscontinuïteit</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Kritieke systemen en de maximale acceptabele uitvaltijd zijn in kaart.</li>
-            <li>Back-up- en herstelprocedures zijn daadwerkelijk getest, niet alleen gemaakt.</li>
-            <li>Er is een uitwijk- of crisisplan voor uitval van kritieke systemen.</li>
+          <ul role="list">
+            <li role="listitem">Kritieke systemen en de maximale acceptabele uitvaltijd zijn in kaart.</li>
+            <li role="listitem">Back-up- en herstelprocedures zijn daadwerkelijk getest, niet alleen gemaakt.</li>
+            <li role="listitem">Er is een uitwijk- of crisisplan voor uitval van kritieke systemen.</li>
           </ul>
         </div>
       </details>
@@ -503,14 +513,14 @@
         <summary>
           <span class="domain-num">05</span>
           <span class="domain-name">Leveranciers- &amp; ketenbeheer</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Kritieke leveranciers zijn geïdentificeerd en beoordeeld op cyberrisico.</li>
-            <li>Beveiligingseisen staan vastgelegd in leverancierscontracten.</li>
-            <li>Er is zicht op de bredere keten, niet alleen de directe leverancier.</li>
+          <ul role="list">
+            <li role="listitem">Kritieke leveranciers zijn geïdentificeerd en beoordeeld op cyberrisico.</li>
+            <li role="listitem">Beveiligingseisen staan vastgelegd in leverancierscontracten.</li>
+            <li role="listitem">Er is zicht op de bredere keten, niet alleen de directe leverancier.</li>
           </ul>
         </div>
       </details>
@@ -518,14 +528,14 @@
         <summary>
           <span class="domain-num">06</span>
           <span class="domain-name">Toegangsbeheer</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>MFA staat aan op kritieke systemen, te beginnen bij beheerdersaccounts.</li>
-            <li>Toegang wordt periodiek herzien (joiners, movers, leavers).</li>
-            <li>Bevoorrechte accounts zijn beperkt en apart gedocumenteerd.</li>
+          <ul role="list">
+            <li role="listitem">MFA staat aan op kritieke systemen, te beginnen bij beheerdersaccounts.</li>
+            <li role="listitem">Toegang wordt periodiek herzien (joiners, movers, leavers).</li>
+            <li role="listitem">Bevoorrechte accounts zijn beperkt en apart gedocumenteerd.</li>
           </ul>
         </div>
       </details>
@@ -533,14 +543,14 @@
         <summary>
           <span class="domain-num">07</span>
           <span class="domain-name">Netwerk- &amp; systeembeveiliging</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Het netwerk is gesegmenteerd, zodat een besmetting zich niet vrij verspreidt.</li>
-            <li>Er is een structureel patchproces met een vaste doorlooptijd.</li>
-            <li>Kwetsbaarheden worden periodiek gescand op internet-bereikbare systemen.</li>
+          <ul role="list">
+            <li role="listitem">Het netwerk is gesegmenteerd, zodat een besmetting zich niet vrij verspreidt.</li>
+            <li role="listitem">Er is een structureel patchproces met een vaste doorlooptijd.</li>
+            <li role="listitem">Kwetsbaarheden worden periodiek gescand op internet-bereikbare systemen.</li>
           </ul>
         </div>
       </details>
@@ -548,14 +558,14 @@
         <summary>
           <span class="domain-num">08</span>
           <span class="domain-name">Bewustzijn &amp; training</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Medewerkers krijgen minimaal jaarlijks een awareness-training.</li>
-            <li>Phishingsimulaties maken het effect van training meetbaar.</li>
-            <li>Bestuurders volgen een aparte, wettelijk verplichte training.</li>
+          <ul role="list">
+            <li role="listitem">Medewerkers krijgen minimaal jaarlijks een awareness-training.</li>
+            <li role="listitem">Phishingsimulaties maken het effect van training meetbaar.</li>
+            <li role="listitem">Bestuurders volgen een aparte, wettelijk verplichte training.</li>
           </ul>
         </div>
       </details>
@@ -563,14 +573,14 @@
         <summary>
           <span class="domain-num">09</span>
           <span class="domain-name">Cryptografie &amp; gegevensbescherming</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Gevoelige data is versleuteld, zowel opgeslagen als onderweg.</li>
-            <li>Sleutelbeheer is belegd: wie beheert sleutels, hoe worden ze vervangen.</li>
-            <li>Het niveau van versleuteling sluit aan bij de gevoeligheid van de data.</li>
+          <ul role="list">
+            <li role="listitem">Gevoelige data is versleuteld, zowel opgeslagen als onderweg.</li>
+            <li role="listitem">Sleutelbeheer is belegd: wie beheert sleutels, hoe worden ze vervangen.</li>
+            <li role="listitem">Het niveau van versleuteling sluit aan bij de gevoeligheid van de data.</li>
           </ul>
         </div>
       </details>
@@ -578,14 +588,14 @@
         <summary>
           <span class="domain-num">10</span>
           <span class="domain-name">Fysieke beveiliging &amp; HR</span>
-          <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="chevron" width="16" height="16" aria-hidden="true"><use href="#chevron-icon"/></svg>
         </summary>
         <div class="domain-detail">
           <p>Waar het om gaat</p>
-          <ul>
-            <li>Fysieke toegang tot kritieke locaties is beperkt tot een geregistreerde groep.</li>
-            <li>Er is een screeningsproces voor rollen met toegang tot kritieke systemen.</li>
-            <li>Toegang wordt direct ingetrokken bij uitdiensttreding, fysiek én digitaal.</li>
+          <ul role="list">
+            <li role="listitem">Fysieke toegang tot kritieke locaties is beperkt tot een geregistreerde groep.</li>
+            <li role="listitem">Er is een screeningsproces voor rollen met toegang tot kritieke systemen.</li>
+            <li role="listitem">Toegang wordt direct ingetrokken bij uitdiensttreding, fysiek én digitaal.</li>
           </ul>
         </div>
       </details>
@@ -593,11 +603,12 @@
   </section>
 
   <section class="trust">
-    <div class="trust-inner">
+    <blockquote class="trust-inner">
       <span class="quote-mark" aria-hidden="true">"</span>
       <p>Ontwikkeld op basis van jarenlange praktijkervaring in security governance geen generieke checklist, maar inzicht dat aansluit op hoe toezichthouders en auditors daadwerkelijk kijken.</p>
-    </div>
+    </blockquote>
   </section>
+  </main>
 
   <footer>
     <div class="foot-row">
