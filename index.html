@@ -318,6 +318,100 @@
     .domain-detail{padding-left:22px;}
   }
 
+  /* ---------- Explainer sections (NIS2 + scan) ---------- */
+  .explainer{
+    position:relative;
+    z-index:1;
+    padding:64px 0;
+    border-top:1px solid var(--navy-800);
+  }
+  .explainer h2{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:28px;
+    color:#fff;
+    margin:0 0 20px;
+    max-width:560px;
+  }
+  .explainer .prose-lede{
+    font-size:17px;
+    line-height:1.65;
+    color:var(--ink-dim);
+    max-width:640px;
+    margin:0 0 36px;
+  }
+  .explainer .prose-lede + .prose-lede{
+    margin-top:-20px;
+  }
+
+  .fact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1px;
+    background:var(--navy-800);
+    border:1px solid var(--navy-800);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  @media (max-width:640px){
+    .fact-grid{grid-template-columns:1fr;}
+  }
+  .fact-item{
+    background:var(--navy-900);
+    padding:22px 24px;
+  }
+  .fact-label{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--teal-light);
+    margin:0 0 8px;
+  }
+  .fact-value{
+    font-size:15px;
+    line-height:1.55;
+    color:var(--ink-dim);
+    margin:0;
+  }
+
+  .process-list{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+    max-width:640px;
+  }
+  .process-item{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .process-num{
+    flex-shrink:0;
+    width:30px;height:30px;
+    border-radius:50%;
+    border:1px solid var(--navy-700);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--teal-light);
+  }
+  .process-text h3{
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:16px;
+    color:#fff;
+    margin:0 0 6px;
+  }
+  .process-text p{
+    font-size:14px;
+    line-height:1.6;
+    color:var(--ink-dim);
+    margin:0;
+  }
+
   /* ---------- Trust ---------- */
   .trust{
     position:relative;
@@ -442,6 +536,59 @@
         Start de zelfscan
         <span class="btn-arrow" aria-hidden="true">→</span>
       </a>
+    </div>
+  </section>
+
+  <section class="explainer">
+    <p class="section-label">Achtergrond</p>
+    <h2>Wat houdt de Cyberbeveiligingswet (NIS2) precies in?</h2>
+    <p class="prose-lede">De Cyberbeveiligingswet is de Nederlandse implementatie van de Europese NIS2-richtlijn. De wet verplicht organisaties in aangewezen sectoren om hun cybersecurity aantoonbaar op orde te hebben, en om incidenten binnen een vaste termijn te melden. Doel is de digitale weerbaarheid van kritieke en belangrijke sectoren in Europa te vergroten, nu digitale verstoringen steeds vaker directe maatschappelijke of economische schade veroorzaken.</p>
+    <div class="fact-grid">
+      <div class="fact-item">
+        <p class="fact-label">Wanneer</p>
+        <p class="fact-value">De wet treedt in werking op 15 augustus 2026. Organisaties die in scope vallen, moeten vanaf die datum aan de verplichtingen voldoen.</p>
+      </div>
+      <div class="fact-item">
+        <p class="fact-label">Voor wie</p>
+        <p class="fact-value">Organisaties in 18 aangewezen sectoren (o.a. energie, zorg, digitale infrastructuur, overheid, productie) die daarnaast aan omvangsdrempels voldoen — samen ruim 8.000 organisaties in Nederland.</p>
+      </div>
+      <div class="fact-item">
+        <p class="fact-label">Kernverplichtingen</p>
+        <p class="fact-value">Een zorgplicht (passende beveiligingsmaatregelen op tien domeinen) en een meldplicht (incidenten melden aan het NCSC binnen 24 uur, met een formele melding binnen 72 uur).</p>
+      </div>
+      <div class="fact-item">
+        <p class="fact-label">Bij niet-naleven</p>
+        <p class="fact-value">Toezichthouders kunnen handhavend optreden, met boetes die kunnen oplopen tot miljoenen euro's, afhankelijk van het type entiteit en de aard van de overtreding.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="explainer">
+    <p class="section-label">De zelfscan</p>
+    <h2>Wat gebeurt er als u de scan invult?</h2>
+    <p class="prose-lede">De zelfscan is opgeknipt in twee korte stappen, zodat u niet meer tijd investeert dan nodig. U doorloopt eerst een scopecheck, en optioneel daarna de volledige volwassenheidsscan. Aan het eind ontvangt u een score en, indien gewenst, een uitgebreid rapport met concrete vervolgstappen.</p>
+    <div class="process-list">
+      <div class="process-item">
+        <span class="process-num" aria-hidden="true">1</span>
+        <div class="process-text">
+          <h3>Scopecheck (2 minuten)</h3>
+          <p>Een paar vragen over uw sector en omvang bepalen of de Cyberbeveiligingswet op uw organisatie van toepassing is.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num" aria-hidden="true">2</span>
+        <div class="process-text">
+          <h3>Volwassenheidsscan (5 minuten)</h3>
+          <p>Per kerndomein beantwoordt u drie korte vragen over de huidige stand van zaken, van governance tot fysieke beveiliging. Elk antwoord geeft een score van 0 tot 4.</p>
+        </div>
+      </div>
+      <div class="process-item">
+        <span class="process-num" aria-hidden="true">3</span>
+        <div class="process-text">
+          <h3>Score en rapport</h3>
+          <p>U ontvangt direct een totaalscore met risicocategorie. Wilt u weten wát u concreet moet verbeteren? Het uitgebreide rapport geeft per domein de bijbehorende actiepunten.</p>
+        </div>
+      </div>
     </div>
   </section>
 
